@@ -347,6 +347,52 @@
 
     <!-- #28. Cups & Balls  -->
 
+    <div></div>
+    <div></div>
+    <div></div>
 
+    <style>
+
+    body {
+        background-color: #1A4341;
+        position:relative;
+    }
+
+    div:nth-of-type(1),
+    div:nth-of-type(2),
+    div:nth-of-type(3){
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        width: 50px;
+        height: 50px;
+    }
+
+    div:nth-of-type(1) {
+        transform:translate(-130px,-60px);
+        background-color: #998235;
+        border-radius: 50%;
+        box-shadow: 210px 0 0 0 #F3AC3C,
+                    70px 70px 0 0 #998235,
+                    140px 70px 0 0 #F3AC3C;
+    }
+
+    div:nth-of-type(2) {
+        transform:translate(-60px,-60px);
+        background-color: #F3AC3C;
+        border-radius: 50% 50% 0 0;
+        box-shadow: 70px 0 0 0 #998235;
+    }
+
+    div:nth-of-type(3) {
+        transform:translate(-130px,10px);
+        background-color: #F3AC3C;
+        border-radius: 0 0 50% 50%;
+        box-shadow: 210px 0 0 0 #998235;
+    }
+    
+    </style>
+    
+    <!-------------------------------->
 </body>
 </html>
