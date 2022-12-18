@@ -22,6 +22,7 @@
     <div></div>
 
     <style>
+
         body {
             background-color: #222;
             position: relative;
@@ -62,6 +63,7 @@
             background-color: #2D9CDB;
             border-radius: 5px 0 10px 0;
         }
+
     </style>
 
     <!-------------------------------->
@@ -74,6 +76,7 @@
     <div></div>
 
     <style>
+
         body {
             background-color: #F5D6B4;
             position: relative;
@@ -107,6 +110,7 @@
         div:nth-of-type(3) {
             transform: translate(-20px, -65px);
         }
+
     </style>
 
     <!-------------------------------->
@@ -118,6 +122,7 @@
     <div></div>
 
     <style>
+
         body {
             background-color: #F3AC3C;
             position: relative;
@@ -146,9 +151,202 @@
             box-shadow: 50px 0 0 0 #998235,
                 0px 50px 0 0 #998235;
         }
+
     </style>
 
     <!-------------------------------->
-</body>
 
+    <!-- #24. Switches -->
+
+    <div></div>
+    <div></div>
+
+    <style>
+
+    body {
+        background-color: #62306D;
+        position: relative;
+    }
+    
+    div:nth-of-type(1),
+    div:nth-of-type(2){
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+    div:nth-of-type(1) {
+        width: 100px;
+        height: 100px;
+        background-color: #F7EC7D;
+        transform: translate(-120px,-50%);
+        border-radius: 50%;
+        box-shadow: 140px 0 0 0 #F7EC7D;
+        
+    }
+
+    div:nth-of-type(2) {
+        width: 100px;
+        height: 150px;
+        background-color: #AA445F;
+        transform: translate(-120px,-100px);
+        border-radius: 50px 50px 50px 50px;
+        z-index: -1;
+        box-shadow: 140px 50px 0 0 #E38F66;
+    }
+
+    </style>
+
+    <!-------------------------------->
+
+    <!-- #25. Blossom   -->
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <style>
+
+    body {
+        background-color: #998235;
+        position: relative;
+    }
+    
+    div:nth-of-type(1),
+    div:nth-of-type(2),
+    div:nth-of-type(3),
+    div:nth-of-type(4){
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+    div:nth-of-type(1),
+    div:nth-of-type(4) {
+        width: 80px;
+        height: 100px;
+        background-color: #1A4341;
+    }
+
+    div:nth-of-type(2),
+    div:nth-of-type(3) {
+        width: 80px;
+        height: 60px;
+        background-color: #F3AC3C;
+    }
+    
+    div:nth-of-type(1){
+        transform: translate(-90px,-90px);
+        border-radius: 0 50px;
+    }
+
+    div:nth-of-type(2) {
+        transform: translate(-90px,30px);
+        border-radius: 0 50px;
+    }
+
+    div:nth-of-type(3) {
+        transform: translate(10px,-90px);
+        border-radius: 50px 0;
+    }
+
+    div:nth-of-type(4) {
+        transform: translate(10px,-10px);
+        border-radius: 50px 0;
+    }
+
+    </style>
+
+    <!-------------------------------->
+
+    <!-- #26. Smiley   -->
+
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <style>
+    
+    body {
+        background-color: #6592CF;
+        position: relative;
+    }
+    
+    div:nth-of-type(1),
+    div:nth-of-type(2),
+    div:nth-of-type(3){
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80px;
+        height: 40px;
+        border: 20px solid #060F55;
+        background-color: #6592CF;
+    }
+
+    div:nth-of-type(1) {
+        border-bottom: transparent;
+        border-radius: 100px 100px 0 0;
+        transform:translate(-160px,-110px);
+    }
+
+    div:nth-of-type(2) {
+        border-bottom: transparent;
+        border-radius: 100px 100px 0 0;
+        transform:translate(40px,-110px);
+    }
+
+    div:nth-of-type(3) {
+        border-top: transparent;
+        border-radius: 0px 0 100px 100px;
+        transform:translate(-60px,50px);
+    }
+    
+    </style>
+
+    <!-------------------------------->
+
+    <!-- #27. Lock Up  -->
+
+    <div></div>
+
+    <style>
+        
+    body {
+        background-color: #E38F66;
+        position: relative;
+    }
+
+    div,
+    div::before {
+        position: absolute;
+        top: 50%;
+        left:50%;
+        background-color: #AA445F;
+        border-radius: 50%;
+    }
+    div {
+        transform:translate(-50%,-50%);
+        width: 200px;
+        height: 200px;
+    }
+    div::before {
+        content: "";
+        position: absolute;
+        transform:translate(-50%,-50%) rotate(45deg);
+        width: 80px;
+        height: 80px;
+        border: 30px solid #F7EC7D;
+        border-left: 30px solid #AA445F;
+        border-right: 30px solid #AA445F;
+    }
+    </style>
+
+    <!-------------------------------->
+
+    <!-- #28. Cups & Balls  -->
+
+
+</body>
 </html>
