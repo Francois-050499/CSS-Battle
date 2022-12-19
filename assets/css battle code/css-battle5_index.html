@@ -15,55 +15,48 @@
 
     <!-- #29. Suffocate -->
 
-
     <div></div>
     <div></div>
     <div></div>
     <div></div>
-
+    
     <style>
+    
+    body {
+        background-color: #1A4341;
+        position: relative;
+    }
 
-        body {
-            background-color: #222;
-            position: relative;
-        }
+    * {
+        margin: 0;
+    }
 
-        div {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-        }
+    div {
+        position: absolute;
+        width: 200px;
+        height: 150px;
+        background-color: #F3AC3C;
+    }
 
-        div:nth-of-type(1) {
-            transform: translate(-36px, -88px) rotate(45deg);
-            width: 30px;
-            height: 75px;
-            background-color: #F2994A;
-        }
+    div:nth-of-type(1) {
+        border-radius: 0 0 100px 0px;
+    }
 
-        div:nth-of-type(2) {
-            transform: translate(-52px, -39px) rotate(-45deg);
-            width: 30px;
-            height: 80px;
-            background-color: #F2994A;
-            border-radius: 10px 0 5px 0;
-        }
+    div:nth-of-type(2) {
+        transform: translate(0px,150px);
+        border-radius: 0 100px 0 0;
+    }
 
-        div:nth-of-type(3) {
-            transform: translate(4px, 13px) rotate(45deg);
-            width: 30px;
-            height: 75px;
-            background-color: #2D9CDB;
-        }
+    div:nth-of-type(3) {
+        transform: translate(200px,0px);
+        border-radius: 0 0 0 100px;
+    } 
 
-        div:nth-of-type(4) {
-            transform: translate(20px, -41px) rotate(-45deg);
-            width: 30px;
-            height: 80px;
-            background-color: #2D9CDB;
-            border-radius: 5px 0 10px 0;
-        }
-
+    div:nth-of-type(4) {
+        transform: translate(200px,150px);
+        border-radius: 100px 0 0 0px;
+    } 
+    
     </style>
 
     <!-------------------------------->
@@ -72,45 +65,30 @@
 
 
     <div></div>
-    <div></div>
-    <div></div>
-
+    
     <style>
+    
+    body {
+        position: relative;
+        background-color: #F7EC7D;
+    }
 
-        body {
-            background-color: #F5D6B4;
-            position: relative;
-        }
+    * {
+        margin: 0;
+    }
 
-        div {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            background-color: #D86F45;
-        }
-
-        div:nth-of-type(1) {
-            transform: translate(-50%, 15px);
-            width: 200px;
-            height: 50px;
-            border-radius: 0 25px 25px 50px;
-        }
-
-        div:nth-of-type(2),
-        div:nth-of-type(3) {
-            width: 100px;
-            height: 100px;
-            border-radius: 50px;
-        }
-
-        div:nth-of-type(2) {
-            transform: translate(-100px, -35px);
-        }
-
-        div:nth-of-type(3) {
-            transform: translate(-20px, -65px);
-        }
-
+    div {
+        position: absolute;
+        transform: translateY(50px);
+        width: 400px;
+        height: 50px;
+        background-color: #E38F66;
+        box-shadow: 0 50px 0 0 #AA445F,
+                    0 100px 0 0 #AA445F,
+                    0 150px 0 0 #62306D,
+                    0 200px 0 0 #62306D;
+    }
+    
     </style>
 
     <!-------------------------------->
