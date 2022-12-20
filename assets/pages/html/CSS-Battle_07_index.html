@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="9問が出題されていて、だんだんと複雑化しているように感じられます。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../images/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/destyle.css">
+    <title>CSS Battle #7</title>
+</head>
+
+<body>
+
+    <section class="section">
+        <h2 class="section-title section-button">Battle #7 - Backface</h2>
+        <p class="section-description">Battle.7では、9問が出題されていて、少し複雑な問題が増えているように見受けられます。難易度はどのようになっているのかみてみましょう。</p>
+
+        <h2 class="section-title-sub">#33. Birdie </h2>
+        <p class="section-picture"><img src="../../images/7-33.png" alt="小鳥"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">円、半円、扇形の3パターンを今までやってきた中で覚えていますかと問われているような問題。border-radiusの調節で解決。</p>
+
+        <h2 class="section-title-sub">#34. Christmas Tree </h2>
+        <p class="section-picture"><img src="../../images/7-34.png" alt="クリスマスツリー"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">三角形の作り方がポイントでジェネレーターを用いてもいいと思うが、どのような原理で出来るかはおさえておくべきだと思った。</p>
+
+        <h2 class="section-title-sub">#35. Ice Cream </h2>
+        <p class="section-picture"><img src="../../images/7-35.png" alt="アイスクリーム"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">ひとつずつパーツごとに分けて作成した。工夫の仕方についてはいくらでもありそうだと感じた。</p>
+
+        <h2 class="section-title-sub">#36. Interleaved</h2>
+        <p class="section-picture"><img src="../../images/7-36.png" alt="インターリーブ"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">box-shadowを使った典型的な問題。もう何度かしている。</p>
+
+        <h2 class="section-title-sub">#37. Tunnel </h2>
+        <p class="section-picture"><img src="../../images/7-37.png" alt="トンネル"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">正方形を作り、transform:rotateによって回転させている。</p>
+
+        <h2 class="section-title-sub">#38. Not Simply Square </h2>
+        <p class="section-picture"><img src="../../images/7-38.png" alt="単純ではない四角形"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">box-shadowで、作っていくが少しだけ応用が必要であると感じた。ひとつの基準を作った時に、その基準をどのように配置させると課題の形になるか考えないといけなかったため、パズルをしている感覚だった。</p>
+
+        <h2 class="section-title-sub">#39. Sunset </h2>
+        <p class="section-picture"><img src="../../images/7-39.png" alt="日の出"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">最初は、背景色で作った四角の上に、黄色の三本線を描き、その四角でoverflow:hiddenをかけて、先端を丸めようとしたが、うまくいかなかった。そのため時間がかかってしまった。大きなborderで作った中身のある円を外側に背景色で追加したところ、あっさりできてしまい時間のロスを招く結果となった。前者の方法でうまくいった方はご教示願います。</p>
+
+        <h2 class="section-title-sub">#40. Letter B </h2>
+        <p class="section-picture"><img src="../../images/7-40.png" alt="文字B"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">borderと、個々で指定するborder-○○(向き)を用いて背景色で消すことによって、丸みの部分を作り出せば後はできる。</p>
+
+        <h2 class="section-title-sub">#41. Fox Head </h2>
+        <p class="section-picture"><img src="../../images/7-41.png" alt="きつねの頭"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">きつねのあごの部分をどのようにすれば実現できるのかについて試行錯誤した結果、意外と時間がかかった。これも背景色で消すことによってできる。</p>
+
+        <h2 class="section-title">私が実際に記述したHTML、CSS</h2>
+        <p class="section-description-ref"><a href="https://github.com/Francois-050499/CSS-Battle/tree/main/assets"
+                target="_blank">実際に書いたものはこちら！</a></p>
+    </section>
+
+    <aside>
+        <div>
+            <a href="./index.html" id="back-to-top" class="back-to-top"></a>
+        </div>
+    </aside>
+
+    <script src="./assets/js/smoothscroll.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
