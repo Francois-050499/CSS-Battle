@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS Battle の一番最初の課題をしてみました。サイトいわくウォーミングアップとのことですので、どのようなものか見てみましょう">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../images/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/destyle.css">
+    <title>CSS Battle #1</title>
+</head>
+
+<body>
+
+    <section class="section">
+        <h2 class="section-title section-button">Battle #1 - Pilot Battle</h2>
+        <p class="section-description">Battle.1では、はじめということもあり、ウォーミングアップの12問が出題されているようです。ひとつひとつがどれくらいの難易度であるのか見てみましょう。
+        </p>
+
+        <h2 class="section-title-sub">Default</h2>
+        <p class="section-picture"><img src="../../images/Default.png" alt="デフォルト"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">このデフォルトの四角形にdiv、span、classやid名をつけて目標物を作るものです。が、なるべく少ない文字で達成させることが出来るかが問題となる。
+        </p>
+
+        <h2 class="section-title-sub">#1. Simply Square</h2>
+        <p class="section-picture"><img src="../../images/1-1.png" alt="シンプルな正方形"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">四角形の大きさを合わせて、デフォルトの四角形を端に寄せるために全体にmargin:0を書けることによって実現させている。</p>
+
+        <h2 class="section-title-sub">#2. Carrom</h2>
+        <p class="section-picture"><img src="../../images/1-2.png" alt="ボードゲーム"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">position:relativeとabsoluteを用いて、それぞれ目的の位置に配置させる。</p>
+
+        <h2 class="section-title-sub">#3.Push Button</h2>
+        <p class="section-picture"><img src="../../images/1-3.png" alt="押しボタン"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">
+            四角形をまず作った後に、背景色に合わせた大きな円を書き、その後それぞれ目的の色の円を上から順に重ねて完成させている。(もう少し効率よく書けると判明するため後に説明。)</p>
+
+        <h2 class="section-title-sub">#4. Ups n Downs</h2>
+        <p class="section-picture"><img src="../../images/1-4.png" alt="上昇と下降"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">border-radiusを用いた丸みのある四角形を、nth-childで指定して、配置した(もう少し効率よく書けると判明するため後に説明。)</p>
+
+        <h2 class="section-title-sub">#5. Acid Rain</h2>
+        <p class="section-picture"><img src="../../images/1-5.png" alt="なぜ酸性雨なのか"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">border-radiusを用いた円に尖りのあるような図形を複数作り、どのように重なっているかを考慮して配置する。</p>
+
+        <h2 class="section-title-sub">#6. Missing Slice</h2>
+        <p class="section-picture"><img src="../../images/1-6.png" alt="ミスしたスライス"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">
+            ここでは扇形を作ることがポイントで、border-radiusではなくさらに限定させた、border-top-right-radiusやborder-bottom-right-radiusを用いることで実現。</p>
+
+        <h2 class="section-title-sub">#7. Leafy Trail</h2>
+        <p class="section-picture"><img src="../../images/1-7.png" alt="葉で覆われた道"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">#5. Acid
+            Rainと同じようなつくりであるが、ここで苦労した点は配置である。transform:translateのx軸、Y軸を%でしか指定したことがなく、%ではうまく配置できなくなったため、px指定で書き直したところ上手く配置できた。意外と時間がかかったもののひとつである。
+        </p>
+
+        <h2 class="section-title-sub">#8. Forking Crazy</h2>
+        <p class="section-picture"><img src="../../images/1-8.png" alt="名の通りクレイジーなフォーク"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">
+            ウォーミングアップの12問がここには掲載されていると書いてあるにもかかわらず、一番最初にどのように作るのか分からない第一の壁に当たることになり、特にフォークの先端部分が苦戦した部分である。nth-child(odd)と(even)でフォークの先端の条件を書いてから、ひとつずつまたnth-childで指定するという荒技を用いた。おそらく効率的な書き方はあると思うため、指摘をいただければ幸い。
+        </p>
+
+        <h2 class="section-title-sub">#9. Tesseract</h2>
+        <p class="section-picture"><img src="../../images/1-9.png" alt="立方体の4次元の相似形"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">これは意外と単純で、transform:translateと、rotateが併用できる部分を用いると単純にできる。#8. Forking
+            Crazyに比べて難易度が下がり一安心したことを記憶している。</p>
+
+        <h2 class="section-title-sub">#10. Cloaked Spirits</h2>
+        <p class="section-picture"><img src="../../images/1-10.png" alt="覆われた精霊"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">
+            アイデアは浮かんだものの記述量の多さと工夫が必要と感じて骨が折れた部分。とにかく疑似要素を使って少ないdivとspanのタグで完成させようと押した部分。とにかく円を記述した。(もう少し効率よく書けると判明するため後に説明。)
+        </p>
+
+        <h2 class="section-title-sub">#11. Eye of Sauron</h2>
+        <p class="section-picture"><img src="../../images/1-11.png" alt="サウロンの目"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">#10. Cloaked Spiritsと同じで、アイデアは浮かんだものの記述量の多さと工夫が必要と感じて骨が折れた部分。</p>
+
+        <h2 class="section-title-sub">#12. Wiggly Moustache</h2>
+        <p class="section-picture"><img src="../../images/1-12.png" alt="くねくねとした口ひげ"></p>
+        <p class="section-title-point">ポイント</p>
+        <p class="section-description-sub">#4. Ups n
+            Downsと同じようなアップダウンのある課題であったため同じように記述すればよいかなと思ったが、ある程度幅を持たせた状態の記述の仕方が分からず、半円に背景と同色の円を重ねることによって髭の部分のマークを実現した。ここで初めて登場する便利な書き方であるbox-shadowが登場する。髭の丸い部分のパーツはこれを使って記述することで書く量も抑えられた。
+        </p>
+
+        <h2 class="section-title">私が実際に記述したHTML、CSS</h2>
+        <p class="section-description-ref"><a href="https://github.com/Francois-050499/CSS-Battle/tree/main/assets"
+                target="_blank">実際に書いたものはこちら！</a></p>
+    </section>
+
+    <aside>
+        <div>
+            <a href="./CSS-Battle_01_index.html" id="back-to-top" class="back-to-top"></a>
+        </div>
+    </aside>
+
+    <script src="../../js/smoothscroll.js"></script>
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>
