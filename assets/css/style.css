@@ -143,12 +143,14 @@ body {
 }
 
 .wrap .card .content h3 {
+    margin-bottom: 20px;
     font-size: 1.8em;
     color: #fff;
     z-index: 1;
 }
 
 .wrap .card .content p {
+    
     font-size: 1em;
     color: #fff;
     font-weight: 300;
